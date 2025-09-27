@@ -75,7 +75,7 @@ p {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -105,13 +105,15 @@ p {
 
 .btn-secondary {
   background: transparent;
-  color: var(--light-blue);
-  border: 2px solid var(--light-blue);
+  color: var(--white);
+  border: 2px solid var(--white);
 }
 
 .btn-secondary:hover {
-  background: var(--light-blue);
-  color: var(--white);
+  background: var(--white);
+  color: var(--primary-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
 }
 
 .card {
@@ -125,6 +127,19 @@ p {
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero section specific button styling */
+.hero .btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  border: 2px solid var(--white);
+  backdrop-filter: blur(10px);
+}
+
+.hero .btn-secondary:hover {
+  background: var(--white);
+  color: var(--primary-blue);
 }
 
 @media (max-width: 768px) {

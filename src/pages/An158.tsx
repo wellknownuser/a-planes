@@ -52,30 +52,30 @@ const An158: React.FC = () => {
             <div className="spec-card card">
               <h3>Розміри</h3>
               <ul>
-                <li><strong>Довжина:</strong> 28,4 м (93 фути 2 дюйми)</li>
-                <li><strong>Розмах крил:</strong> 28,9 м (94 фути 10 дюймів)</li>
-                <li><strong>Висота:</strong> 8,19 м (26 футів 10 дюймів)</li>
-                <li><strong>Площа крила:</strong> 83,6 м² (900 кв. футів)</li>
+                <li><strong>Довжина:</strong> 28,4 м</li>
+                <li><strong>Розмах крил:</strong> 28,9 м</li>
+                <li><strong>Висота:</strong> 8,19 м</li>
+                <li><strong>Площа крила:</strong> 83,6 м²</li>
               </ul>
             </div>
             
             <div className="spec-card card">
               <h3>Вага та місткість</h3>
               <ul>
-                <li><strong>Порожня вага:</strong> 15,200 кг (33,510 фунтів)</li>
-                <li><strong>Макс. злітна вага:</strong> 23,500 кг (51,808 фунтів)</li>
+                <li><strong>Порожня вага:</strong> 15,200 кг</li>
+                <li><strong>Макс. злітна вага:</strong> 23,500 кг</li>
                 <li><strong>Пасажири:</strong> 99 (одним класом)</li>
-                <li><strong>Ємність паливних баків:</strong> 5,500 кг (12,125 фунтів)</li>
+                <li><strong>Ємність баків для палива:</strong> 5,500 кг</li>
               </ul>
             </div>
             
             <div className="spec-card card">
               <h3>Характеристики</h3>
               <ul>
-                <li><strong>Крейсерська швидкість:</strong> 820 км/год (509 миль/год)</li>
-                <li><strong>Макс. швидкість:</strong> 870 км/год (540 миль/год)</li>
-                <li><strong>Дальність:</strong> 2,400 км (1,491 миль) з макс. пасажирами</li>
-                <li><strong>Практична стеля:</strong> 12,200 м (40,026 футів)</li>
+                <li><strong>Крейсерська швидкість:</strong> 820 км/год</li>
+                <li><strong>Макс. швидкість:</strong> 870 км/год</li>
+                <li><strong>Дальність:</strong> 2,400 км з макс. пасажирами</li>
+                <li><strong>Практична стеля:</strong> 12,200 м</li>
               </ul>
             </div>
             
@@ -84,8 +84,8 @@ const An158: React.FC = () => {
               <ul>
                 <li><strong>Двигуни:</strong> 2 × Івченко-Прогрес Д-436-148</li>
                 <li><strong>Тип:</strong> Турбовентиляторний з високим ступенем двоконтурності</li>
-                <li><strong>Тяга:</strong> 68,6 кН (15,422 фунт-сил) кожен</li>
-                <li><strong>Загальна тяга:</strong> 137,2 кН (30,844 фунт-сил)</li>
+                <li><strong>Тяга:</strong> 68,6 кН кожен</li>
+                <li><strong>Загальна тяга:</strong> 137,2 кН</li>
               </ul>
             </div>
           </div>
@@ -99,7 +99,7 @@ const An158: React.FC = () => {
             <h2>Історія та розробка</h2>
             <div className="timeline">
               <div className="timeline-item">
-                <div className="timeline-year">2000s</div>
+                <div className="timeline-year">2000</div>
                 <div className="timeline-content">
                   <h3>Розробка концепції</h3>
                   <p>Проект розпочато як подовжений пасажирський варіант успішного літака АН-148.</p>

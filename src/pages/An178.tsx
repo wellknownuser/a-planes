@@ -52,30 +52,30 @@ const An178: React.FC = () => {
             <div className="spec-card card">
               <h3>Розміри</h3>
               <ul>
-                <li><strong>Довжина:</strong> 32,9 м (107 футів 11 дюймів)</li>
-                <li><strong>Розмах крил:</strong> 28,4 м (93 фути 2 дюйми)</li>
-                <li><strong>Висота:</strong> 9,8 м (32 фути 2 дюйми)</li>
-                <li><strong>Площа крила:</strong> 83,6 м² (900 кв. футів)</li>
+                <li><strong>Довжина:</strong> 32,9 м</li>
+                <li><strong>Розмах крил:</strong> 28,4 м</li>
+                <li><strong>Висота:</strong> 9,8 м</li>
+                <li><strong>Площа крила:</strong> 83,6 м²</li>
               </ul>
             </div>
             
             <div className="spec-card card">
               <h3>Вага та місткість</h3>
               <ul>
-                <li><strong>Порожня вага:</strong> 22,000 кг (48,501 фунтів)</li>
-                <li><strong>Макс. злітна вага:</strong> 42,500 кг (93,696 фунтів)</li>
-                <li><strong>Макс. корисне навантаження:</strong> 18,000 кг (39,683 фунтів)</li>
-                <li><strong>Ємність паливних баків:</strong> 13,500 л (3,566 галонів США)</li>
+                <li><strong>Порожня вага:</strong> 22,000 кг</li>
+                <li><strong>Макс. злітна вага:</strong> 42,500 кг</li>
+                <li><strong>Макс. корисне навантаження:</strong> 18,000 кг</li>
+                <li><strong>Ємність баків для палива:</strong> 13,500 л</li>
               </ul>
             </div>
             
             <div className="spec-card card">
               <h3>Характеристики</h3>
               <ul>
-                <li><strong>Крейсерська швидкість:</strong> 825 км/год (512 миль/год)</li>
-                <li><strong>Макс. швидкість:</strong> 860 км/год (534 миль/год)</li>
-                <li><strong>Дальність:</strong> 5,500 км (3,418 миль) з макс. паливом</li>
-                <li><strong>Практична стеля:</strong> 12,200 м (40,026 футів)</li>
+                <li><strong>Крейсерська швидкість:</strong> 825 км/год</li>
+                <li><strong>Макс. швидкість:</strong> 860 км/год</li>
+                <li><strong>Дальність:</strong> 5,500 км з макс. паливом</li>
+                <li><strong>Практична стеля:</strong> 12,200 м</li>
               </ul>
             </div>
             
@@ -84,8 +84,8 @@ const An178: React.FC = () => {
               <ul>
                 <li><strong>Двигуни:</strong> 2 × Івченко-Прогрес Д-436-148ФМ</li>
                 <li><strong>Тип:</strong> Турбовентиляторний з високим ступенем двоконтурності</li>
-                <li><strong>Тяга:</strong> 73,6 кН (16,545 фунт-сил) кожен</li>
-                <li><strong>Загальна тяга:</strong> 147,2 кН (33,090 фунт-сил)</li>
+                <li><strong>Тяга:</strong> 73,6 кН кожен</li>
+                <li><strong>Загальна тяга:</strong> 147,2 кН</li>
               </ul>
             </div>
           </div>
