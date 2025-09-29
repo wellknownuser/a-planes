@@ -101,7 +101,7 @@ const An178: React.FC = () => {
               <div className="timeline-item">
                 <div className="timeline-year">2010</div>
                 <div className="timeline-content">
-                  <h3>Запуск проекту</h3>
+                  <h3>Запуск проєкту</h3>
                   <p>Розробка АН-178 почалася як сучасна заміна застарілих транспортних літаків.</p>
                 </div>
               </div>

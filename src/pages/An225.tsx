@@ -101,7 +101,7 @@ const An225: React.FC = () => {
               <div className="timeline-item">
                 <div className="timeline-year">1984</div>
                 <div className="timeline-content">
-                  <h3>Початок проекту</h3>
+                  <h3>Початок проєкту</h3>
                   <p>Розробка почалася як частина радянської космічної програми для транспортування космічного корабля "Буран".</p>
                 </div>
               </div>
