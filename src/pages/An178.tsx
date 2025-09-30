@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './AircraftPage.css';
 import an178Image from '../assets/an-178-colored.png';
+import { handleNavigationClick } from '../utils/navigation';
 
 const An178: React.FC = () => {
   return (
@@ -222,8 +223,8 @@ const An178: React.FC = () => {
       <section className="page-navigation">
         <div className="container">
           <div className="nav-links">
-            <Link to="/an-124" className="btn btn-secondary">← Попередній: АН-124 "Руслан"</Link>
-            <Link to="/an-158" className="btn">Далі: АН-158 →</Link>
+            <Link to="/an-124" className="btn btn-secondary" onClick={handleNavigationClick}>← Попередній: АН-124 "Руслан"</Link>
+            <Link to="/an-158" className="btn" onClick={handleNavigationClick}>Далі: АН-158 →</Link>
           </div>
         </div>
       </section>

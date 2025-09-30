@@ -32,6 +32,12 @@ const Navigation: React.FC = () => {
     setTimeout(() => {
       target.style.background = '';
     }, 150);
+
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'auto'
+    });
   };
 
   return (

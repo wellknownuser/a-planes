@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import An225 from './pages/An225';
 import An124 from './pages/An124';
@@ -10,6 +11,7 @@ import './App.css';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Navigation />
         <Routes>
