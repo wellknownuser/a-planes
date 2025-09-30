@@ -121,12 +121,36 @@ const An178: React.FC = () => {
                   <p>Обширна програма льотних випробувань продемонструвала можливості та характеристики літака.</p>
                 </div>
               </div>
+
+              <div className="timeline-item">
+                <div className="timeline-year">2016</div>
+                <div className="timeline-content">
+                  <h3>Презентація за кордоном</h3>
+                  <p>28 березня 2016 року ДП «Антонов» презентував Ан-178 на 9-й оборонній виставці DefExpo — 2016 в передмісті Куатол (штат Гоа, Індія)</p>
+                </div>
+              </div>
               
+              <div className="timeline-item">
+                <div className="timeline-year">2017</div>
+                <div className="timeline-content">
+                  <h3>Випробування навантаження</h3>
+                  <p>22 лютого 2017 р. апарат пройшов випробування навантаженням-розвантаженням авіаційних вантажних контейнерів та палет у вантажній кабіні літака</p>
+                </div>
+              </div>
+
               <div className="timeline-item">
                 <div className="timeline-year">2020</div>
                 <div className="timeline-content">
                   <h3>Прогрес сертифікації</h3>
                   <p>Продовження зусиль з сертифікації та розвиток виробничих можливостей.</p>
+                </div>
+              </div>
+              
+              <div className="timeline-item">
+                <div className="timeline-year">2021</div>
+                <div className="timeline-content">
+                  <h3>Прогрес сертифікації</h3>
+                  <p>Державне підприємство «Антонов», продемонструвало перший військово-транспортний літак Ан-178-100Р №001, призначений для проведення льотних сертифікаційних випробувань, після проведеної програми імпортозаміщення.</p>
                 </div>
               </div>
             </div>
