@@ -48,9 +48,52 @@
   animation: float-gentle 4s ease-in-out infinite;
 }
 
+.aircraft-hero-image {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-aircraft-img {
+  max-width: 100%;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.9;
+  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+  animation: wing-maneuver 6s ease-in-out infinite;
+  transition: opacity 0.3s ease;
+  transform-origin: center center;
+}
+
+.hero-aircraft-img:hover {
+  animation-play-state: paused;
+  opacity: 1;
+  transform: scale(1.05) rotate(0deg);
+}
+
+.hero-aircraft-img-large {
+  max-height: 410px !important;
+}
+
+.hero-aircraft-img-large:hover {
+  transform: scale(1.08) rotate(0deg);
+}
+
 @keyframes float-gentle {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
+}
+
+@keyframes wing-maneuver {
+  0% { transform: translateY(0px) rotate(0deg); }
+  20% { transform: translateY(-5px) rotate(-3deg); }
+  40% { transform: translateY(-8px) rotate(0deg); }
+  60% { transform: translateY(-5px) rotate(3deg); }
+  80% { transform: translateY(-2px) rotate(0deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
 }
 
 .aircraft-overview {
@@ -325,6 +368,14 @@
     font-size: clamp(4rem, 12vw, 6rem);
   }
   
+  .hero-aircraft-img {
+    max-height: 200px;
+  }
+  
+  .hero-aircraft-img-large {
+    max-height: 240px !important;
+  }
+  
   .aircraft-overview,
   .specifications,
   .history,
@@ -378,6 +429,14 @@
 @media (max-width: 480px) {
   .aircraft-hero {
     padding: 2rem 0 1.5rem;
+  }
+  
+  .hero-aircraft-img {
+    max-height: 150px;
+  }
+  
+  .hero-aircraft-img-large {
+    max-height: 180px !important;
   }
   
   .aircraft-overview,

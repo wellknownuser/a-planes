@@ -1,17 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './AircraftPage.css';
+import an178Image from '../assets/an-178-colored.png';
 
 const An178: React.FC = () => {
   return (
     <div className="aircraft-page">
-      {/* Hero Section */}
+      {/* Hero section */}
       <section className="aircraft-hero">
         <div className="container">
           <div className="aircraft-hero-content">
-            <h1>Антонов АН-178</h1>
+            <h1>АН-178</h1>
             <p className="aircraft-subtitle">Сучасний транспортний літак середньої дальності</p>
-            <div className="aircraft-hero-icon">✈️</div>
+            <div className="aircraft-hero-image">
+              <img src={an178Image} alt="Антонов АН-178" className="hero-aircraft-img" />
+            </div>
           </div>
         </div>
       </section>
@@ -19,12 +22,11 @@ const An178: React.FC = () => {
       {/* Overview */}
       <section className="aircraft-overview">
         <div className="container">
-          <div className="overview-grid">
-            <div className="overview-content">
+          <div className="overview-content">
               <h2>Огляд</h2>
               <p>
-                Антонов АН-178 - транспортний літак середньої дальності, розроблений українським 
-                Конструкторським бюро Антонов. Він представляє останнє покоління літаків Антонов, оснащених сучасною 
+                "Антонов" АН-178 - транспортний літак середньої дальності, розроблений українським 
+                Конструкторським бюро "Антонов". Він представляє останнє покоління літаків "Антонов", оснащених сучасною 
                 авіонікою, ефективними двигунами та універсальними вантажними можливостями.
               </p>
               <p>
@@ -36,10 +38,6 @@ const An178: React.FC = () => {
                 Літак має задню вантажну рампу для легкого завантаження та розвантаження, а його двомоторна 
                 конфігурація забезпечує відмінну паливну ефективність та експлуатаційну економіку.
               </p>
-            </div>
-            <div className="overview-image">
-              <div className="aircraft-silhouette large">✈️</div>
-            </div>
           </div>
         </div>
       </section>
@@ -92,7 +90,7 @@ const An178: React.FC = () => {
         </div>
       </section>
 
-      {/* History & Development */}
+      {/* History & development */}
       <section className="history">
         <div className="container">
           <div className="history-content">
@@ -158,7 +156,7 @@ const An178: React.FC = () => {
         </div>
       </section>
 
-      {/* Design Features */}
+      {/* Design features */}
       <section className="achievements">
         <div className="container">
           <h2>Конструктивні особливості та можливості</h2>
@@ -190,7 +188,7 @@ const An178: React.FC = () => {
         </div>
       </section>
 
-      {/* Variants & Applications */}
+      {/* Variants & applications */}
       <section className="aircraft-overview">
         <div className="container">
           <div className="overview-content">
@@ -224,7 +222,7 @@ const An178: React.FC = () => {
       <section className="page-navigation">
         <div className="container">
           <div className="nav-links">
-            <Link to="/an-124" className="btn btn-secondary">← Попередній: АН-124 Руслан</Link>
+            <Link to="/an-124" className="btn btn-secondary">← Попередній: АН-124 "Руслан"</Link>
             <Link to="/an-158" className="btn">Далі: АН-158 →</Link>
           </div>
         </div>

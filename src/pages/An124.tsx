@@ -1,17 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './AircraftPage.css';
+import an124Image from '../assets/an-124-colored.png';
 
 const An124: React.FC = () => {
   return (
     <div className="aircraft-page">
-      {/* Hero Section */}
+      {/* Hero section */}
       <section className="aircraft-hero">
         <div className="container">
           <div className="aircraft-hero-content">
-            <h1>Антонов АН-124 Руслан</h1>
+            <h1>АН-124 "Руслан"</h1>
             <p className="aircraft-subtitle">Важкий стратегічний транспортний літак</p>
-            <div className="aircraft-hero-icon">🛫</div>
+            <div className="aircraft-hero-image">
+              <img src={an124Image} alt="Антонов АН-124 Руслан" className="hero-aircraft-img hero-aircraft-img-large" />
+            </div>
           </div>
         </div>
       </section>
@@ -19,12 +22,11 @@ const An124: React.FC = () => {
       {/* Overview */}
       <section className="aircraft-overview">
         <div className="container">
-          <div className="overview-grid">
-            <div className="overview-content">
+          <div className="overview-content">
               <h2>Огляд</h2>
               <p>
-                Антонов АН-124 Руслан - великий стратегічний чотиримоторний 
-                транспортний літак, розроблений у 1980-х роках Конструкторським бюро Антонов в Україні. 
+                "Антонов" АН-124 "Руслан" - великий стратегічний чотиримоторний 
+                транспортний літак, розроблений у 1980-х роках Конструкторським бюро "Антонов" в Україні. 
                 Це другий за величиною військовий транспортний літак у світі, поступається лише АН-225.
               </p>
               <p>
@@ -36,10 +38,6 @@ const An124: React.FC = () => {
                 Зараз кілька АН-124 продовжують перебувати в експлуатації у різних операторів по всьому світу, 
                 продовжуючи виконувати як військові, так і цивільні вантажні перевезення.
               </p>
-            </div>
-            <div className="overview-image">
-              <div className="aircraft-silhouette large">🛫</div>
-            </div>
           </div>
         </div>
       </section>
@@ -92,7 +90,7 @@ const An124: React.FC = () => {
         </div>
       </section>
 
-      {/* History & Development */}
+      {/* History & development */}
       <section className="history">
         <div className="container">
           <div className="history-content">
@@ -118,7 +116,7 @@ const An124: React.FC = () => {
                 <div className="timeline-year">1976</div>
                 <div className="timeline-content">
                   <h3>Повна переробка проєкту</h3>
-                  <p>О.К. Антонов ухвалив рішення про повну переробку проєкту, якому надали новий шифр "виріб 400". У січні 1977 року вийшла Постанова ЦК КПРС і РМ СРСР, що затвердила нові вимоги. Ключовим рішенням стало використання суперкритичних профілів крила, яке накреслив сам Генеральний конструктор.</p>
+                  <p>О.К. "Антонов" ухвалив рішення про повну переробку проєкту, якому надали новий шифр "виріб 400". У січні 1977 року вийшла Постанова ЦК КПРС і РМ СРСР, що затвердила нові вимоги. Ключовим рішенням стало використання суперкритичних профілів крила, яке накреслив сам Генеральний конструктор.</p>
                 </div>
               </div>
               
@@ -263,7 +261,7 @@ const An124: React.FC = () => {
         </div>
       </section>
 
-      {/* Capabilities & Features */}
+      {/* Capabilities & features */}
       <section className="achievements">
         <div className="container">
           <h2>Ключові можливості та особливості</h2>
@@ -295,7 +293,7 @@ const An124: React.FC = () => {
         </div>
       </section>
 
-      {/* Current Operations */}
+      {/* Current operations */}
       <section className="aircraft-overview">
         <div className="container">
           <div className="overview-content">
@@ -322,7 +320,7 @@ const An124: React.FC = () => {
       <section className="page-navigation">
         <div className="container">
           <div className="nav-links">
-            <Link to="/an-225" className="btn btn-secondary">← Попередній: АН-225 Мрія</Link>
+            <Link to="/an-225" className="btn btn-secondary">← Попередній: АН-225 "Мрія"</Link>
             <Link to="/an-178" className="btn">Далі: АН-178 →</Link>
           </div>
         </div>

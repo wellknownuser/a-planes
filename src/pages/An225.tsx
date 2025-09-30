@@ -1,17 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './AircraftPage.css';
+import an225Image from '../assets/an-225-colored.png';
 
 const An225: React.FC = () => {
   return (
     <div className="aircraft-page">
-      {/* Hero Section */}
+      {/* Hero section */}
       <section className="aircraft-hero">
         <div className="container">
           <div className="aircraft-hero-content">
-            <h1>Антонов АН-225 Мрія</h1>
-            <p className="aircraft-subtitle">Мрія - найбільший транспортний літак у світі</p>
-            <div className="aircraft-hero-icon">🛩️</div>
+            <h1>АН-225 "Мрія"</h1>
+            <p className="aircraft-subtitle">"Мрія" - найбільший транспортний літак у світі</p>
+            <div className="aircraft-hero-image">
+              <img src={an225Image} alt='Антонов АН-225 "Мрія"' className="hero-aircraft-img" />
+            </div>
           </div>
         </div>
       </section>
@@ -19,12 +22,11 @@ const An225: React.FC = () => {
       {/* Overview */}
       <section className="aircraft-overview">
         <div className="container">
-          <div className="overview-grid">
-            <div className="overview-content">
+          <div className="overview-content">
               <h2>Огляд</h2>
               <p>
-                Антонов АН-225 Мрія був стратегічним вантажним літаком 
-                розроблений та збудований Конструкторським бюро Антонов в Україні. Це був найважчий літак, 
+                "Антонов" АН-225 "Мрія" був стратегічним вантажним літаком 
+                розроблений та збудований Конструкторським бюро "Антонов" в Україні. Це був найважчий літак, 
                 коли-небудь побудований, і мав найбільший розмах крил серед усіх літаків в експлуатації.
               </p>
               <p>
@@ -36,10 +38,6 @@ const An225: React.FC = () => {
                 <strong>Примітка:</strong> АН-225 був, на жаль, знищений під час російського вторгнення 
                 в Україну у 2022 році, але залишається легендарним досягненням в історії авіації.
               </p>
-            </div>
-            <div className="overview-image">
-              <div className="aircraft-silhouette large">🛩️</div>
-            </div>
           </div>
         </div>
       </section>
@@ -92,7 +90,7 @@ const An225: React.FC = () => {
         </div>
       </section>
 
-      {/* History & Development */}
+      {/* History & development */}
       <section className="history">
         <div className="container">
           <div className="history-content">
@@ -214,7 +212,7 @@ const An225: React.FC = () => {
         </div>
       </section>
 
-      {/* Records & Achievements */}
+      {/* Records & achievements */}
       <section className="achievements">
         <div className="container">
           <h2>Рекорди та досягнення</h2>
@@ -251,7 +249,7 @@ const An225: React.FC = () => {
         <div className="container">
           <div className="nav-links">
             <Link to="/" className="btn btn-secondary">← Назад до головної</Link>
-            <Link to="/an-124" className="btn">Далі: АН-124 Руслан →</Link>
+            <Link to="/an-124" className="btn">Далі: АН-124 "Руслан" →</Link>
           </div>
         </div>
       </section>

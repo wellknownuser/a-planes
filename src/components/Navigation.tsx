@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navigation.css';
+import logoAircraft from '../assets/logo-aircraft.png';
 
 const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ const Navigation: React.FC = () => {
     // Close mobile menu
     setIsMenuOpen(false);
     
-    // Aggressively remove focus and any hover states
+    // Remove focus and any hover states
     const target = event.currentTarget;
     
     // Immediately blur to remove focus
@@ -37,7 +38,8 @@ const Navigation: React.FC = () => {
     <nav className="navigation">
       <div className="nav-container">
         <Link to="/" className="nav-logo">
-          <span>✈️ Літаки Антонов</span>
+          <img src={logoAircraft} alt="Antonov Aircraft" className="nav-logo-image" />
+          <span>Літаки "Антонов"</span>
         </Link>
         
         <div className={`nav-menu ${isMenuOpen ? 'nav-menu-active' : ''}`}>
@@ -53,14 +55,14 @@ const Navigation: React.FC = () => {
             className={`nav-link ${isActive('/an-225') ? 'nav-link-active' : ''}`}
             onClick={handleLinkClick}
           >
-            АН-225 Мрія
+            АН-225 "Мрія"
           </Link>
           <Link 
             to="/an-124" 
             className={`nav-link ${isActive('/an-124') ? 'nav-link-active' : ''}`}
             onClick={handleLinkClick}
           >
-            АН-124 Руслан
+            АН-124 "Руслан"
           </Link>
           <Link 
             to="/an-178" 

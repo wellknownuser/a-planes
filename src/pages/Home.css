@@ -90,9 +90,30 @@
   animation: fly 3s ease-in-out infinite alternate;
 }
 
+.hero-aircraft-image {
+  max-width: 100%;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.95;
+  filter: drop-shadow(0 8px 32px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hero-aircraft-image:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
 @keyframes fly {
   0% { transform: translateY(0px) rotate(-2deg); }
   100% { transform: translateY(-20px) rotate(2deg); }
+}
+
+@keyframes hero-fly {
+  0% { transform: translateY(0px) rotate(-1deg); }
+  100% { transform: translateY(-15px) rotate(1deg); }
 }
 
 .aircraft-grid {
@@ -147,10 +168,30 @@
   transform: translateY(-8px);
 }
 
+.aircraft-card:hover .aircraft-card-image {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
 .aircraft-icon {
   font-size: 4rem;
   margin-bottom: 1rem;
   opacity: 0.8;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aircraft-card-image {
+  max-width: 100%;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
 }
 
 .aircraft-card h3 {
@@ -217,6 +258,10 @@
     font-size: clamp(6rem, 15vw, 8rem);
   }
   
+  .hero-aircraft-image {
+    max-height: 300px;
+  }
+  
   .aircraft-grid {
     padding: 4rem 0;
   }
@@ -246,6 +291,10 @@
     gap: 1.5rem;
   }
   
+  .hero-aircraft-image {
+    max-height: 250px;
+  }
+  
   .aircraft-grid,
   .about {
     padding: 3rem 0;
@@ -261,5 +310,10 @@
   
   .aircraft-icon {
     font-size: clamp(2.5rem, 8vw, 4rem);
+    height: 100px;
+  }
+  
+  .aircraft-card-image {
+    max-height: 80px;
   }
 }

@@ -1,17 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './AircraftPage.css';
+import an158Image from '../assets/an-158-colored.png';
 
 const An158: React.FC = () => {
   return (
     <div className="aircraft-page">
-      {/* Hero Section */}
+      {/* Hero section */}
       <section className="aircraft-hero">
         <div className="container">
           <div className="aircraft-hero-content">
-            <h1>Антонов АН-158</h1>
+            <h1>АН-158</h1>
             <p className="aircraft-subtitle">Регіональний пасажирський реактивний літак</p>
-            <div className="aircraft-hero-icon">🛬</div>
+            <div className="aircraft-hero-image">
+              <img src={an158Image} alt="Антонов АН-158" className="hero-aircraft-img" />
+            </div>
           </div>
         </div>
       </section>
@@ -19,11 +22,10 @@ const An158: React.FC = () => {
       {/* Overview */}
       <section className="aircraft-overview">
         <div className="container">
-          <div className="overview-grid">
-            <div className="overview-content">
+          <div className="overview-content">
               <h2>Огляд</h2>
               <p>
-                Антонов АН-158 - регіональний реактивний літак, розроблений українським Конструкторським бюро Антонов 
+                "Антонов" АН-158 - регіональний реактивний літак, розроблений українським Конструкторським бюро Антонов 
                 як пасажирський варіант сімейства АН-148. Призначений для коротких та середніх маршрутів, 
                 АН-158 поєднує сучасні технології з перевіреною надійністю.
               </p>
@@ -36,10 +38,6 @@ const An158: React.FC = () => {
                 АН-158 представляє вихід Антонова на конкурентний ринок регіональних реактивних літаків, 
                 пропонуючи конкурентоспроможні експлуатаційні витрати та сучасні пасажирські зручності.
               </p>
-            </div>
-            <div className="overview-image">
-              <div className="aircraft-silhouette large">🛬</div>
-            </div>
           </div>
         </div>
       </section>
@@ -92,7 +90,7 @@ const An158: React.FC = () => {
         </div>
       </section>
 
-      {/* History & Development */}
+      {/* History & development */}
       <section className="history">
         <div className="container">
           <div className="history-content">
@@ -134,7 +132,7 @@ const An158: React.FC = () => {
         </div>
       </section>
 
-      {/* Passenger Features */}
+      {/* Passenger features */}
       <section className="achievements">
         <div className="container">
           <h2>Пасажирські особливості та можливості</h2>
@@ -166,7 +164,7 @@ const An158: React.FC = () => {
         </div>
       </section>
 
-      {/* Market Position */}
+      {/* Market position */}
       <section className="aircraft-overview">
         <div className="container">
           <div className="overview-content">
